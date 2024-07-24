@@ -37,7 +37,7 @@ export class AuthServiceService {
         map(() => true),
         catchError(e => {
           console.log(e);
-          return throwError(() => 'Algo no sucedio como lo esperaba');
+          return throwError(() => 'Correo o Contrasenia incorrecto');
         })
       );
 
